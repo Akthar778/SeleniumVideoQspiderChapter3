@@ -21,6 +21,10 @@ public class changeMouseControlIntoNewTab {
 		//to change control into new tab
 		driver.getWindowHandles().forEach(tab->driver.switchTo().window(tab));
 		
+		for (String string : args) {
+			
+		}
+		
 		driver.findElement(By.xpath("//ul[@id='trending']//li//a[@href='product.php?product=selenium-training'][normalize-space()='Selenium Training']")).click();
 
 		
